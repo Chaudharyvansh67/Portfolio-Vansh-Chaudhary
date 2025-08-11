@@ -1,19 +1,226 @@
-<!DOCTYPE HTML>
-<HEAD> 
-<title>
-Portfolio
-</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vansh Chaudhary | Portfolio</title>
 
-</HEAD>
-<BODY>
-<h1>
-This is my Portfolio
-</h1>
-<h2>
-This is Coming Soon! Vansh Chaudhary
-</h2>
-</body>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #0d0d0d;
+        color: white;
+        overflow-x: hidden;
+    }
+
+    /* ===== Header ===== */
+    header {
+        background-color: rgba(26, 26, 26, 0.9);
+        backdrop-filter: blur(6px);
+        padding: 20px;
+        text-align: center;
+        animation: headerSlideDown 1.2s ease-out;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    @keyframes headerSlideDown {
+        0% { transform: translateY(-100%); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 2.8em;
+        font-weight: 600;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: 500;
+        transition: color 0.3s, text-shadow 0.3s;
+    }
+    nav a:hover {
+        color: #ff6600;
+        text-shadow: 0 0 10px rgba(255,102,0,0.8);
+    }
+
+    /* ===== Section Animations ===== */
+    section {
+        padding: 50px 10%;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    section.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .skills, .contact, .education {
+        background: rgba(26, 26, 26, 0.8);
+        backdrop-filter: blur(10px);
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(255,255,255,0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .skills:hover, .contact:hover, .education:hover {
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0 0 20px rgba(255,102,0,0.3);
+    }
+
+    h2 {
+        color: #ff6600;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    ul li {
+        padding: 6px 0;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+        text-align: center;
+        padding: 15px;
+        background-color: rgba(26, 26, 26, 0.9);
+        color: #aaa;
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+    }
+
+    /* ===== Contact Form ===== */
+    #contactForm {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    #contactForm input, 
+    #contactForm textarea {
+        background-color: rgba(34, 34, 34, 0.9);
+        color: #fff;
+        border: 1px solid #444;
+        padding: 12px;
+        border-radius: 6px;
+        outline: none;
+        font-size: 1rem;
+        transition: border-color 0.3s, background 0.3s;
+    }
+    #contactForm input:focus, 
+    #contactForm textarea:focus {
+        border-color: #ff6600;
+        background-color: rgba(40, 40, 40, 1);
+    }
+    #contactForm button {
+        background: linear-gradient(45deg, #ff6600, #ff8800);
+        color: #fff;
+        padding: 12px;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: transform 0.2s, background 0.3s;
+    }
+    #contactForm button:hover {
+        transform: scale(1.05);
+        background: linear-gradient(45deg, #e65c00, #ff6600);
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Vansh Chaudhary</h1>
+    <p>Portfolio Website</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am currently pursuing a Bachelor of Technology (BTech) degree in Computer Science and Engineering 
+        from SRMCEM Lucknow, affiliated with APJ Abdul Kalam Technical University. 
+        My academic focus primarily centers around programming languages such as C, C++, and problem solving. 
+        I am currently learning Data Structures and Algorithms (DSA) as well as Web Development.
+    </p>
+</section>
+
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>C/C++ Programming</li>
+        <li>Git and GitHub Basics</li>
+        <li>Data Structures and Algorithms</li>
+    </ul>
+</section>
+
+<section id="education" class="education">
+    <h2>Education & Learning</h2>
+    <ul>
+        <li>BTech in Computer Science and Engineering - SRMCEM Lucknow</li>
+        <li>Currently enrolled in Data Structures & Algorithms Course - Apna College</li>
+        <li>Learning Web Development</li>
+    </ul>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>📞 7068858816</p>
+    <p>📧 <a href="mailto:chaudharyvansh67@gmail.com" style="color:white;">chaudharyvansh67@gmail.com</a></p>
+    <p>🔗 <a href="https://www.linkedin.com/in/vansh-chaudhary-81b0b7244" style="color:white;">LinkedIn</a></p>
+
+    <!-- Contact Form -->
+    <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
 <footer>
-
-
+    &copy; 2025 Vansh Chaudhary. All Rights Reserved.
 </footer>
+
+<script>
+    // Scroll reveal animation
+    const sections = document.querySelectorAll('section');
+    const revealOnScroll = () => {
+        sections.forEach(sec => {
+            const rect = sec.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                sec.classList.add('show');
+            }
+        });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+
+    // Contact form handler
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("Thank you! Your message has been sent.");
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
