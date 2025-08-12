@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vansh Chaudhary | Portfolio</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Font - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -69,11 +67,10 @@
 </head>
 <body class="text-white">
 
-    <!-- Header & Navigation -->
     <header class="fixed top-0 left-0 w-full z-50 bg-gray-900 bg-opacity-70 backdrop-blur-lg shadow-lg">
-        <nav class="container mx-auto p-4 flex justify-between items-center">
-            <a href="#hero" class="text-2xl font-bold text-orange-500 hover:text-orange-400 transition-all transform hover:scale-110">Portfolio</a>
-            <ul class="flex space-x-6">
+        <nav class="container mx-auto p-4 flex justify-center items-center relative">
+            <a href="#hero" class="text-3xl md:text-4xl font-bold text-orange-500 hover:text-orange-400 transition-all transform hover:scale-110 z-20">Portfolio</a>
+            <ul class="absolute right-4 md:right-8 flex space-x-6 z-10">
                 <li><a href="#about" class="hover:text-orange-500 transition-all transform hover:scale-110">About</a></li>
                 <li><a href="#skills" class="hover:text-orange-500 transition-all transform hover:scale-110">Skills</a></li>
                 <li><a href="#education" class="hover:text-orange-500 transition-all transform hover:scale-110">Education</a></li>
@@ -82,9 +79,7 @@
         </nav>
     </header>
 
-    <!-- Main Content Container -->
     <main class="pt-20">
-        <!-- Hero Section -->
         <section id="hero" class="min-h-screen flex items-center justify-center p-8 bg-cover bg-center"
                  style="background-image: linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.8)), url('https://placehold.co/1920x1080/0d0d0d/e0e0e0?text=Developer+Background');">
             <div class="text-center scroll-reveal">
@@ -96,7 +91,6 @@
             </div>
         </section>
 
-        <!-- About Me Section -->
         <section id="about" class="py-20 bg-gray-900 border-t border-gray-800">
             <div class="container mx-auto px-8 max-w-4xl scroll-reveal">
                 <h2 class="text-4xl font-bold text-center text-orange-500 mb-10">About Me</h2>
@@ -111,7 +105,6 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
         <section id="skills" class="py-20 bg-gray-800 border-t border-gray-700">
             <div class="container mx-auto px-8 max-w-4xl scroll-reveal">
                 <h2 class="text-4xl font-bold text-center text-orange-500 mb-10">Skills</h2>
@@ -125,7 +118,6 @@
             </div>
         </section>
 
-        <!-- Education Section -->
         <section id="education" class="py-20 bg-gray-900 border-t border-gray-800">
             <div class="container mx-auto px-8 max-w-4xl scroll-reveal">
                 <h2 class="text-4xl font-bold text-center text-orange-500 mb-10">Education & Learning</h2>
@@ -147,7 +139,6 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="py-20 bg-gray-800 border-t border-gray-700">
             <div class="container mx-auto px-8 max-w-2xl scroll-reveal">
                 <h2 class="text-4xl font-bold text-center text-orange-500 mb-10">Get in Touch</h2>
@@ -166,7 +157,7 @@
                         <svg class="w-6 h-6 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.08 11.08 0 003.882 3.882l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.163 18 3 13.837 3 8V6a1 1 0 011-1z"></path>
                         </svg>
-                        <span class="text-gray-300">706x8x8x16</span>
+                        <span class="text-gray-300">706-XXX-X16</span>
                     </div>
                     <div class="flex items-center space-x-3 transition-all transform hover:scale-110">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-orange-500">
@@ -176,7 +167,6 @@
                     </div>
                 </div>
 
-                <!-- Custom Contact Form -->
                 <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <input type="text" name="name" placeholder="Your Name" required
                            class="bg-gray-700 p-3 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-colors md:col-span-1">
@@ -190,7 +180,6 @@
                     </button>
                 </form>
 
-                <!-- Custom Message Box -->
                 <div id="messageBox" class="fixed inset-0 bg-gray-900 bg-opacity-70 backdrop-blur-sm hidden items-center justify-center p-4 z-50">
                     <div class="bg-gray-800 p-8 rounded-lg shadow-2xl max-w-sm w-full text-center border-t-4 border-orange-500 transform scale-90 opacity-0 transition-all duration-300 ease-in-out">
                         <h3 class="text-2xl font-bold mb-4">Message Sent!</h3>
@@ -201,7 +190,6 @@
                     </div>
                 </div>
 
-                <!-- LinkedIn Link -->
                 <div class="text-center mt-12 transition-all transform hover:scale-105">
                     <p class="text-lg text-gray-400">Connect with me on LinkedIn:</p>
                     <a href="https://www.linkedin.com/in/vansh-chaudhary-81b0b7244?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BgNCXDxmLSJeXGW243C741w%3D%3D"
@@ -215,7 +203,6 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-900 bg-opacity-70 backdrop-blur-lg text-gray-400 py-6 text-center">
         <p>&copy; 2025 Vansh Chaudhary. All Rights Reserved.</p>
     </footer>
@@ -255,7 +242,7 @@
 
             // You can add logic here to actually send the form data,
             // for now, we just simulate the submission.
-            console.log('Form Submitted!');
+            console.log('Form Submitted with data:', new FormData(contactForm));
             contactForm.reset();
         });
 
